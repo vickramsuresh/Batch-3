@@ -10,11 +10,13 @@ public class MyCalc implements ICalc {
     @PostMapping("/memory/{value}")
     @Override
     public void setMemoryVariable(@PathVariable int value){
+        // Set memery variable value
         memoryVariable = value;
     }
 
     @GetMapping("/add")
     public int add(@RequestParam int value1,@RequestParam int value2) {
+        // Add two values
         return value1 + value2;
     }
 
@@ -30,6 +32,7 @@ public class MyCalc implements ICalc {
 
     @Override
     public int multiplyWithMemoryValue(int value1, int value2) {
+        // Multiply two values and add memory variable to the result
         return ( value1 * value2 ) + memoryVariable;
     }
 
