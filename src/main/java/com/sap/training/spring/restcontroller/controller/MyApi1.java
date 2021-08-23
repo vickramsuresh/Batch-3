@@ -19,6 +19,7 @@ public class MyApi1 {
             throw new NullPointerException("First name is mandatory");
         }
 
+        // Check last name is null
         if(lastName != null){
             return "Hi " + firstName + " " + lastName;
         } else {
