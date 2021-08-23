@@ -12,7 +12,9 @@ public class MyApi1 {
 
     @GetMapping("/Hi/{firstName}")
     public String welcome2(@PathVariable String firstName, @RequestParam(required = false) String lastName) {
-
+        
+        
+        // Check for null value
         if(firstName == null) {
             throw new NullPointerException("First name is mandatory");
         }
