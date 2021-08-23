@@ -14,13 +14,6 @@ public class MyCalcTest {
         System.out.println("New Instance created for Ical " + service);
     }
 
-//    @BeforeAll
-//    public static void setupTestClass() {
-//        service = new MyCalc();
-//        service.setMemoryVariable(5);
-//        System.out.println("New Instance created for Ical " + service);
-//    }
-
     @AfterEach
     public void cleanUp(){
         System.out.println("After each method is called");
